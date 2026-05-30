@@ -225,55 +225,63 @@ h1 {
   color: #6e4334;
   font-size: 28px;
 }
-
 .cards {
-  position: relative;
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .card {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, #ffffff, #fff6ef);
-  border: 1px solid #f5d6c4;
-  border-radius: 26px;
-  padding: 18px 18px 18px 76px;
-  text-align: right;
-  box-shadow: 0 14px 28px rgba(214, 113, 63, 0.09);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  border-radius: 22px;
+
+  padding: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 12px 30px rgba(255, 107, 53, 0.08);
+
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
 }
 
 .card::before {
-  content: "✦";
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 42px;
-  height: 42px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #ff6b35, #ff9a66);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 20px rgba(255, 107, 53, 0.22);
+  content: "";
+  display: block;
+
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 14px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #ff7d47, #ffb38d);
 }
 
 .card h3 {
-  margin: 0 0 9px;
+  margin: 0 0 8px;
   color: #6e4334;
   font-size: 18px;
+  font-weight: 700;
 }
-
 .card a {
   display: block;
-  color: #5c4b43;
   text-decoration: none;
+
+  color: #8a6a5b;
+
+  margin: 6px 0;
+
   font-size: 14px;
-  margin: 5px 0;
+
   direction: ltr;
-  text-align: right;
 }
 
 @media (max-width: 380px) {
@@ -303,4 +311,23 @@ h1 {
     font-size: 14px;
     border-radius: 23px;
   }
+}
+
+.avatar {
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 14px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #ff7d47, #ffb38d);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
 }
