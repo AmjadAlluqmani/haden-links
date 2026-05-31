@@ -183,11 +183,16 @@ h1 {
 }
 
 .btn:nth-child(3)::before {
+  content: "PDF";
+  font-size: 12px;
+}
+
+.btn:nth-child(4)::before {
   content: "</>";
   font-size: 16px;
 }
 
-.btn:nth-child(4)::before {
+.btn:nth-child(5)::before {
   content: "AI";
   font-size: 15px;
 }
